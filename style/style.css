@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(187, 146, 225);
+    padding: 20px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
