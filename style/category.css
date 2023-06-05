@@ -1,0 +1,24 @@
+img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+#products div{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 20px;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 80%;
+    border: 1px solid black;
+}
+#parent-div{
+    display: flex;
+}
+#cat{
+    width: 20%;
+    border: 1px black solid;
+}
