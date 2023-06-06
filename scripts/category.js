@@ -11,12 +11,16 @@ let show = (data) => {
     title.innerHTML = ele.title;
     let category = document.createElement("p");
     category.innerHTML = ele.category;
+    category.setAttribute("class","category")
     let price = document.createElement("p");
     price.innerHTML = `${ele.price * 10}$`;
+    category.setAttribute("class","price")
     let rate = document.createElement("p");
     rate.innerHTML = ele.rating.rate;
+    category.setAttribute("class","rate")
     let btn1 = document.createElement("button");
     btn1.innerHTML = "ADD TO CART";
+    // btn1.setAttribute("class","btn1")
     // let btn2=document.createElement("button");
     // btn2.innerHTML="BUY NOW";
     // divbtn=document.createElement("div")
@@ -38,7 +42,7 @@ let show = (data) => {
       if (!exists) {
         cart.push({ ...ele, qty: 1 });
         localStorage.setItem("cart", JSON.stringify(cart));
-        // alert("added to cart");
+        alert("added to cart");
         window.location.reload();
       }
     });
