@@ -49,3 +49,52 @@ nav ul {
     justify-content: space-evenly;
     /* align-items: center; */
 }
+
+
+
+img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+#cartpage div{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 20px;
+}
+
+#cartpage{
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    /* margin-left: 350px; */
+}
+
+/* #cartpage p{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Courgette', cursive;
+    font-family: 'Signika Negative', sans-serif;
+    cursor: pointer;
+} */
+
+#cartpage h3{
+    font-family: 'Courgette', cursive;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+#cartpage button{
+    padding: 5px 10px;
+}
+#cartpage span{
+    padding: 5px 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.price{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}

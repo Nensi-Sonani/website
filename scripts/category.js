@@ -20,7 +20,7 @@ let show = (data) => {
     category.setAttribute("class","rate")
     let btn1 = document.createElement("button");
     btn1.innerHTML = "ADD TO CART";
-    // btn1.setAttribute("class","btn1")
+    btn1.setAttribute("class","btn1")
     // let btn2=document.createElement("button");
     // btn2.innerHTML="BUY NOW";
     // divbtn=document.createElement("div")
@@ -45,7 +45,19 @@ let show = (data) => {
         alert("added to cart");
         window.location.reload();
       }
+       
+      // function addToCart(id){
+      //   if(!data[id].itemInCart){
+      //     cartList=[...cartList,data[id]];
+      //     show();
+
+      //   }
+      // }
+
+     
+     
     });
+    
   });
 };
 fetch("https://fakestoreapi.com/products")
