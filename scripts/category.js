@@ -60,8 +60,37 @@ let show = (data) => {
     
   });
 };
+let products=[]
+
+
+document.getElementById("lth").addEventListener("click", () => {
+  products.sort((a, b) => a.price - b.price)
+  show(products)
+})
+
+
+document.getElementById("htl").addEventListener("click", () => {
+
+  console.log("clicked");
+  products.sort((a, b) => b.price - a.price)
+  show(products)
+})
+document.getElementById("man").addEventListener("click", () => {
+  let temp = products.filter((val) => val.category == "men's clothing")
+  show(temp)
+})
+document.getElementById("woman").addEventListener("click", () => {
+  let temp = products.filter((val) => val.category == "women's clothing")
+  show(temp)
+})
+document.getElementById("electronics").addEventListener("click", () => {
+  let temp = products.filter((val) => val.category == "electronics")
+  show(temp)
+})
+
+
 fetch("https://fakestoreapi.com/products")
   .then((response) => response.json())
-  .then((data) => show(data));
+  .then((data) =>{products=data,show(data)});
 
 document.getElementById("nav").innerHTML = nav();
